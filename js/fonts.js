@@ -1,0 +1,2 @@
+
+(function(){[["Katibeh","katibeh","400"],["Amiri","amiri4","400"],["Amiri","amiri7","700"],["Noto Naskh Arabic","naskh","400 700"],["Reem Kufi","kufi","400 700"]].forEach(function(f){var el=document.getElementById("f-"+f[1]);if(!el||!window.FontFace)return;try{var b=atob(el.textContent.trim()),n=b.length,u=new Uint8Array(n);for(var i=0;i<n;i++)u[i]=b.charCodeAt(i);var ff=new FontFace(f[0],u.buffer,{weight:f[2],display:"swap"});document.fonts.add(ff);ff.load()}catch(e){}el.remove()})})();

@@ -1,0 +1,710 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>تقويم طويق</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="theme-color" content="#17100a">
+<meta name="referrer" content="no-referrer">
+<script src="js/guard.js"></script>
+<script src="js/assets.js"></script>
+
+
+
+
+
+
+<script src="js/fonts.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="lg-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F6E2B0"/><stop offset=".5" stop-color="#D4AF6A"/><stop offset="1" stop-color="#9C7638"/>
+    </linearGradient>
+    <clipPath id="lg-clip"><circle cx="60" cy="60" r="31"/></clipPath>
+    <mask id="lg-moon"><rect width="120" height="120" fill="#fff"/><circle cx="51.5" cy="41.5" r="7" fill="#000"/></mask>
+    
+<symbol id="logo-mark" viewBox="0 0 120 120"><g fill="currentColor"><path fill-rule="evenodd" d="M60.4 4.6c30.6-.5 55.3 24 55 55.3-.3 31-25 55.8-55.6 55.5C29 115.1 4.5 90.6 4.7 60 4.9 29.6 30 5.1 60.4 4.6ZM60.2 10.8c27.4-.3 49.2 21.6 49 49.2-.2 27.2-22 49.3-49.3 49.1C32.6 108.9 10.8 87.2 11 60 11.2 32.9 33.1 11.1 60.2 10.8Z"/><path d="M69.6 13.8L74.4 15.0L70.7 19.3ZM91.7 25.0L95.2 28.5L89.9 30.3ZM104.9 45.5L106.2 50.2L100.6 49.2ZM106.3 69.3L105.0 74.1L100.6 70.4ZM95.4 91.2L92.0 94.7L90.0 89.4ZM75.0 104.7L70.3 106.1L71.3 100.6ZM50.3 106.2L45.5 104.9L49.3 100.4ZM28.7 95.3L25.2 91.9L30.5 90.0ZM15.1 74.4L13.8 69.7L19.7 70.7ZM13.9 50.1L15.1 45.3L19.4 49.1ZM25.3 28.0L28.8 24.6L30.5 29.8ZM45.8 15.0L50.6 13.8L49.5 19.3Z"/><path d="M59.6 18.2c-5.8 1-10 6-9.9 11.9.1 6.6 5.5 11.9 12.1 11.8 3.2 0 6.1-1.3 8.2-3.4-1.1.3-2.2.5-3.4.5-6.1.1-11-4.6-11.1-10.7-.1-4.1 2-7.7 5.2-9.7-.4-.2-.7-.4-1.1-.4Z"/><path d="M73.4 25.2l1.2 3.1 3.3.2-2.6 2.1.9 3.2-2.8-1.8-2.8 1.8.9-3.2-2.6-2.1 3.3-.2Z"/><path d="M51.37 72.00L46.41 72.00Q46.45 72.37 46.45 73.15Q46.45 75.24 45.61 76.92Q44.77 78.60 43.50 79.67Q41.00 81.80 37.31 81.80Q35.42 81.80 33.92 81.22Q32.43 80.65 31.40 79.71Q30.13 78.52 29.62 76.96Q29.11 75.40 29.11 74.01Q29.11 71.67 29.76 69.70Q30.34 68.02 31.44 66.67L32.10 67.33Q31.57 67.94 31.14 69.05Q30.71 70.16 30.71 71.34Q30.71 72.41 31.18 73.56Q31.65 74.71 32.88 75.57Q34.85 76.96 37.96 76.96Q40.75 76.96 42.37 75.89Q43.99 74.83 44.56 73.39L44.15 72.00L41.45 72.00Q39.48 72.00 38.45 71.10Q37.76 70.52 37.51 69.72Q37.27 68.92 37.35 68.23L37.72 64.62Q37.84 63.55 38.76 62.57Q39.68 61.59 41.08 61.59Q42.96 61.59 44.24 63.39Q45.38 64.99 45.83 67.65L51.37 67.65ZM42.92 67.65Q42.68 66.75 42.14 65.97Q41.61 65.19 40.71 65.19Q40.14 65.19 39.70 65.50Q39.27 65.81 39.05 66.14Q38.82 66.47 38.78 66.59Q38.78 66.83 39.05 67.24Q39.32 67.65 40.18 67.65ZM38.37 54.70Q39.64 55.35 40.63 56.50Q41.73 55.31 42.14 54.70Q42.88 55.07 43.64 55.72Q44.40 56.38 44.77 56.95Q43.78 58.31 42.60 59.45Q41.53 58.35 40.50 57.57Q39.81 58.47 38.82 59.45Q37.14 57.77 36.20 57.24Q37.92 55.31 38.37 54.70ZM50.63 74.25Q51.90 74.91 52.89 76.06Q53.99 74.87 54.40 74.25Q55.14 74.62 55.90 75.28Q56.66 75.94 57.03 76.51Q56.04 77.86 54.85 79.01Q53.79 77.90 52.76 77.12Q52.07 78.03 51.08 79.01Q49.40 77.33 48.46 76.80Q50.18 74.87 50.63 74.25ZM58.50 67.20Q58.50 68.19 58.09 69.03Q57.68 69.87 57.11 70.40Q56.37 71.10 55.22 71.55Q54.08 72.00 53.30 72.00L50.67 72.00Q49.77 72.00 49.13 71.36Q48.50 70.73 48.50 69.83Q48.50 68.92 49.13 68.29Q49.77 67.65 50.67 67.65L52.97 67.65Q54.94 67.65 56.08 67.12Q56.58 66.92 56.90 66.63Q56.29 64.42 53.83 63.19L55.02 58.84Q56.62 59.95 57.48 61.50Q58.50 63.39 58.50 65.93ZM74.99 72.00L70.89 72.00Q70.64 76.59 67.61 78.77Q66.50 79.50 65.37 79.79Q64.24 80.08 63.59 80.08L63.59 82.41L63.46 82.41Q62.56 80.20 60.55 80.32L60.55 76.02Q62.11 75.98 63.42 75.75Q64.74 75.53 65.92 74.83Q67.61 73.84 68.34 72.00L66.25 72.00Q63.96 72.00 62.89 70.77Q62.11 69.95 62.11 68.64L62.15 68.23L62.52 64.62Q62.64 63.51 63.57 62.55Q64.49 61.59 65.92 61.59Q67.69 61.59 69.04 63.39Q70.23 65.03 70.68 67.65L74.99 67.65ZM67.73 67.65Q67.07 65.19 65.47 65.19Q64.94 65.19 64.53 65.50Q64.12 65.81 63.87 66.14Q63.63 66.47 63.59 66.59Q63.59 66.83 63.85 67.24Q64.12 67.65 64.98 67.65ZM89.79 62.04Q90.69 63.06 91.30 64.74Q90.77 66.59 90.16 67.72Q89.54 68.84 88.35 69.83Q85.81 72.00 80.48 72.00L74.29 72.00Q73.39 72.00 72.75 71.36Q72.12 70.73 72.12 69.83Q72.12 68.92 72.75 68.29Q73.39 67.65 74.29 67.65L76.34 67.65Q77.04 66.51 78.18 65.11Q78.18 59.78 77.61 56.01Q77.12 52.65 75.85 48.83L75.23 48.26Q75.19 48.06 75.21 47.34Q75.23 46.62 75.48 45.88Q76.01 44.24 77.40 44.04Q77.94 45.31 78.55 46.15Q79.17 46.99 80.11 47.65Q79.58 48.14 79.37 48.53Q79.17 48.92 79.17 49.45Q79.17 49.61 79.25 50.19L79.45 51.34Q79.54 51.95 79.78 53.39Q80.03 54.82 80.15 55.97Q80.36 57.81 80.36 59.37Q80.36 61.50 80.03 63.19Q83.10 60.40 85.77 60.40Q88.35 60.40 89.79 62.04ZM88.31 65.81Q87.49 64.62 86.77 64.15Q86.06 63.68 84.83 63.68Q82.82 63.68 80.97 64.87Q80.15 65.40 79.52 66.01Q78.88 66.63 78.55 67.08Q78.22 67.53 78.14 67.65L81.59 67.65Q84.05 67.65 85.58 67.24Q87.12 66.83 88.31 65.81Z"/><path d="M17.5 80.5l9.2-1.1 3.6-3.8 7.4-.6 3-4.4 8.2-.8 2.4-3.6 9.6-1 3.1-4.1 14.4-1 2.4 3.2 11.8.6 7 3.4c-1.3 5.6-3.2 10.3-6 14.4-1.7-.8-4.1-1.1-7.2-.9-7.4.5-12.8-.4-20.4.2-9.6.7-15 .3-24.1.1-7.1-.2-14.3-.1-19.8.4-.3-.2-.7-.5-1-.9Z" opacity=".0"/></g><path d="M18 86.2c7.8-1.9 12.4-.8 19.6-1.5 8.7-.9 13.2.7 21.6-.1 9.2-.8 14.2.6 23.4-.5 7.6-.9 12.5-.1 19.4-1.9M24.5 92.6c6.9-1.2 11 .1 17.7-.5 7.6-.7 12.2.5 19.6-.2 8.3-.8 12.8.3 20.1-.6 5.1-.6 9.1 0 13.6-1.3M33 98.6c5.4-.7 8.8.2 14 0 5.9-.3 9.7.3 15.6-.1 6-.5 10.1.2 15.8-.5 3.3-.4 6.2-.1 9.3-.8" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><path d="M12 3.5l1.6 2.6 3-.6.6 3 2.6 1.6-1.6 2.6 1.6 2.6-2.6 1.6-.6 3-3-.6L12 20.5l-1.6-2.6-3 .6-.6-3-2.6-1.6 1.6-2.6-1.6-2.6 2.6-1.6.6-3 3 .6z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="11" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M5 15V6a2 2 0 0 1 2-2h8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="ic-school" viewBox="0 0 24 24"><path d="M3.5 5.5c2.8-1 5.6-1 8.5 1 2.9-2 5.7-2 8.5-1v13c-2.8-1-5.6-1-8.5 1-2.9-2-5.7-2-8.5-1zM12 6.5v13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-rel" viewBox="0 0 24 24"><path d="M14.5 4a7.8 7.8 0 1 0 5.5 13.3A6.3 6.3 0 0 1 14.5 4Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M18 5.5l.6 1.4 1.4.6-1.4.6L18 9.5l-.6-1.4L16 7.5l1.4-.6z" fill="currentColor"/></symbol>
+    <symbol id="ic-nat" viewBox="0 0 24 24"><path d="M12 21v-9.5M12 11.5C10 8.6 7 8 4.5 9M12 11.5c2-2.9 5-3.5 7.5-2.5M12 11.5c-1.4-2.6-.9-5.6 1.2-7.4M12 11.5c-3 0-5.2 1.6-6.2 4.2M12 11.5c3 0 5.2 1.6 6.2 4.2M8 21h8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="ic-pay" viewBox="0 0 24 24"><path d="M5 7c0-1.4 3.1-2.5 7-2.5S19 5.6 19 7s-3.1 2.5-7 2.5S5 8.4 5 7zM5 7v5c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5V7M5 12v5c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="ic-astro" viewBox="0 0 24 24"><path d="M11 3l1.7 5.4L18 10l-5.3 1.6L11 17l-1.7-5.4L4 10l5.3-1.6zM18.5 15.5l.7 1.6 1.6.7-1.6.7-.7 1.6-.7-1.6-1.6-.7 1.6-.7z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-season" viewBox="0 0 24 24"><path d="M3 9h11.5a3 3 0 1 0-3-3M3 13h15a3 3 0 1 1-3 3M3 17h7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="ic-fast" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="9.5" cy="10" r="1.2" fill="currentColor" opacity=".6"/><circle cx="14" cy="14" r="1.6" fill="currentColor" opacity=".45"/></symbol>
+  </defs>
+</svg>
+
+<canvas id="world" aria-hidden="true"></canvas>
+<div class="veil" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<svg class="pf" viewBox="0 0 30 16" aria-hidden="true"><path fill="currentColor" d="M1 8.6C4 7.4 6.6 7 9 7.3 11.4 3.6 15 1.2 20 1c-1.6 1.6-2.6 3.2-3 5 3 .2 6 1 9.6 2.6-3.4.2-6.2.6-8.6 1.5.6 1.8 1.6 3.4 3 4.9-4.6-.4-8-2.2-10.2-5.1C7.200 10 4.200 9.700 1 8.600Z"/></svg>
+<canvas id="sand-cv" aria-hidden="true"></canvas>
+<div class="help" id="help" hidden role="dialog" aria-modal="true" aria-label="إعدادات العرض والاختصارات" dir="rtl" lang="ar"><div class="help-box">
+  <h3>إعدادات العرض</h3>
+  <div class="help-row"><span>حجم الخط</span><button class="btn ghost" type="button" data-fs="0" style="color:#7a2d17;border-color:#7a2d17">عادي</button><button class="btn ghost" type="button" data-fs="1" style="color:#7a2d17;border-color:#7a2d17">كبير</button><button class="btn ghost" type="button" data-fs="2" style="color:#7a2d17;border-color:#7a2d17">أكبر</button></div>
+  <div class="help-row"><label class="check" style="color:inherit"><input type="checkbox" id="read-t" name="read-t"> وضع القراءة: يوقف المشهد ثلاثي الأبعاد ويوفّر البطارية</label></div>
+  <div class="help-row"><label for="q-sel">جودة المشهد</label><select id="q-sel" name="q-sel" style="max-width:170px;min-height:38px"><option value="auto">تلقائي</option><option value="4k">٤K ثابت</option><option value="fast">خفيف وسريع</option></select><span class="perf-t" id="perf-t"></span></div>
+  <div class="help-row"><button class="btn ghost" type="button" id="print-btn" style="color:#7a2d17;border-color:#7a2d17">اطبع التقويم</button></div>
+  <h3>الاختصارات</h3>
+  <dl><dt><kbd>/</kbd></dt><dd>البحث وسؤال التقويم</dd><dt><kbd>V</kbd></dt><dd>وضع المشاهدة</dd><dt><kbd>؟</kbd></dt><dd>هذه النافذة</dd><dt><kbd>[</kbd> <kbd>]</kbd></dt><dd>الفصل السابق والتالي</dd><dt><kbd>Esc</kbd></dt><dd>إغلاق</dd></dl>
+  <button class="btn" type="button" id="help-x">تم</button>
+</div></div>
+<div class="door" id="intro" aria-hidden="true"><div class="lf l" id="door-l"></div><div class="lf r" id="door-r"></div><div class="door-seal"><svg viewBox="0 0 120 120"><use href="#logo-mark"/></svg><p>تقويم طويق</p><span class="door-line" id="door-line">حيّاك الله</span></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="cine-bar" id="cine-bar" dir="rtl" lang="ar" role="group" aria-label="وضع المشاهدة">
+  <output id="cine-out" for="cine-h"></output>
+  <input type="range" id="cine-h" name="cine-h" min="0" max="24" step="0.1" aria-label="ساعة السماء فوق الجبل">
+  <button type="button" id="cine-x">خروج</button>
+  <div class="row2"><span>اسحب لتنظر حولك. الشمس والقمر في موضعهما الحقيقي لهذه الساعة.</span><select id="cine-place" name="cine-place" aria-label="انتقل إلى مكان"></select></div>
+</div>
+
+<div class="site" dir="rtl" lang="ar">
+<a class="skip" href="#main">تخطَّ إلى المحتوى</a>
+
+<header class="top" id="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="تقويم طويق، إلى أعلى الصفحة">
+      <svg aria-hidden="true"><use href="#logo-mark"/></svg>
+      <span><b>تقويم طويق</b><small translate="no">TUWAIQ CALENDAR</small></span>
+    </a>
+    <nav class="nav" aria-label="فصول التقويم" id="nav">
+      <a href="#upcoming">القادم</a>
+      <a href="#school">الدراسة</a>
+      <a href="#ramadan">رمضان</a>
+      <a href="#eid">العيدان</a>
+      <a href="#national">الوطنية</a>
+      <a href="#kingdom">المملكة</a>
+      <a href="#salary">الرواتب</a>
+      <a href="#majlis">المجلس</a>
+      <a href="#prayer">الصلاة</a>
+      <a href="#moon">القمر</a>
+      <a href="#seasons">المواسم</a>
+      <a href="#fasting">الصيام</a>
+      <a href="#sky">السماء</a>
+      <a href="#month">التقويم</a>
+      <a href="#tools">الحاسبات</a>
+    </nav>
+    <div class="tools-bar">
+      <div class="clock" id="clock" aria-label="الوقت في الرياض"><b>&nbsp;</b><span>&nbsp;</span></div>
+      <button class="icon-btn" id="help-btn" type="button" aria-label="إعدادات العرض والاختصارات، الاختصار ؟"><svg aria-hidden="true"><use href="#i-help"/></svg></button>
+      <button class="icon-btn" id="cine-btn" type="button" aria-label="وضع المشاهدة: أخفِ الصفحة وتجوّل في الجبل، الاختصار V"><svg aria-hidden="true"><use href="#i-eye"/></svg></button>
+      <button class="icon-btn" id="search-btn" type="button" aria-label="ابحث في التقويم، الاختصار /"><svg aria-hidden="true"><use href="#i-search"/></svg></button>
+    </div>
+  </div>
+  <div class="ticker" aria-hidden="true"><div class="ticker-track" id="ticker"></div></div>
+</header>
+<ul class="rail" id="rail" aria-hidden="true"></ul>
+<div class="palette" id="palette" hidden role="dialog" aria-modal="true" aria-label="البحث في التقويم">
+  <div class="pal-box">
+    <input type="search" id="pal-in" name="pal-q" autocomplete="off" maxlength="80" placeholder="اسأل: كم باقي على رمضان؟ أو ابحث عن موعد…" aria-controls="pal-list">
+    <p class="pal-ans" id="pal-ans" role="status" hidden></p>
+    <ul class="pal-list" id="pal-list" role="listbox" aria-label="نتائج البحث"></ul>
+    <p class="pal-hint"><kbd>↑</kbd> <kbd>↓</kbd> للتنقل · <kbd>Enter</kbd> للفتح · <kbd>Esc</kbd> للإغلاق</p>
+  </div>
+</div>
+<button class="qbadge" id="qbadge" type="button" hidden></button>
+<a class="totop" id="totop" href="#top" aria-label="العودة إلى أعلى الصفحة"><svg class="ring" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15.9"/></svg><svg aria-hidden="true"><use href="#i-up"/></svg></a>
+
+<main id="main" tabindex="-1">
+<section class="hero" id="top" data-scene="الآن">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="greet" id="greet" aria-live="polite"></p>
+      <div class="greet-sub"><span id="greet-sub"></span><button type="button" class="linkbtn" id="name-btn">وش اسمك؟</button></div>
+      <form class="name-f" id="name-f" hidden><input id="name-in" name="name-in" maxlength="20" autocomplete="off" placeholder="اكتب اسمك" aria-label="اسمك كما يظهر في الترحيب وفي السماء"><button class="btn" type="submit">حيّاك</button></form>
+      <h1 id="hero-title"><span class="sheen" id="sheen" data-text="تقويم طويق">تقويم <span>طويق</span></span></h1>
+      <p class="lede">رحلة فوق جبل طويق بكل مواعيد المملكة: الدراسة وإجازاتها، رمضان والعيدان، المناسبات الوطنية، الرواتب، أوقات الصلاة، أطوار القمر، والمواسم. كلما نزلت في الصفحة تغيّرت ساعة السماء فوق الجرف.</p>
+      <p class="sky-cap" id="sky-cap"></p>
+      <div class="facts" id="facts"></div>
+    </div>
+    <div class="hero-panels">
+      <div class="glass leaf" id="leaf">
+        <p class="leaf-head"><span id="t-wd"></span><span id="t-tag">اليوم</span></p>
+        <p class="leaf-big" id="t-big"></p>
+        <p class="today-h" id="t-h"></p>
+        <p class="today-g" id="t-g"></p>
+        <div class="today-note" id="t-note"></div>
+        <div class="leaf-acts"><button class="tear" type="button" id="tear">انزع الورقة</button><button class="tear" type="button" id="copy-today">انسخ تاريخ اليوم</button></div>
+      </div>
+      <div class="glass glow">
+        <p class="k">المناسبة القادمة</p>
+        <p class="next-t" id="n-title"></p>
+        <p class="next-d" id="n-date"></p>
+        <div class="count" id="n-count"></div>
+      </div>
+    </div>
+    <div class="quick" id="quick"></div>
+  </div>
+  <div class="cue" aria-hidden="true"><span>انزل لتبدأ الرحلة</span><i></i></div>
+</section>
+
+<section class="chapter" id="upcoming" data-scene="سماء الرياض الآن">
+  <div class="wrap title-card" data-ghost="٠">
+    <h2 class="split">المواعيد القادمة</h2>
+    <p class="sub">أقرب المواعيد على شريط يمر أمامك، ثم كل المواعيد مرتبة زمنياً مع عدد الأيام المتبقية لكل موعد.</p>
+  </div>
+  <div class="wrap sec-body">
+    <div class="panel"><h3>أسبوعك</h3><div class="wk" id="wk"></div><div class="yrs" id="yrs"></div></div>
+    <div class="strip-wrap" id="strip-wrap"><div class="strip" id="strip"></div></div>
+    <div class="tl-tools">
+      <div class="filters" role="group" aria-label="تصفية المواعيد" id="filters"></div>
+      <label class="check"><input type="checkbox" id="show-past" name="show-past"> إظهار المواعيد المنتهية</label>
+    </div>
+    <ol class="tl" id="tl"></ol>
+    <button class="more" id="tl-more" type="button" hidden></button>
+    <div class="panel" id="fav-panel"><h3>مواعيدي</h3><ul class="fav-list" id="fav-list"></ul><ul class="note-list" id="note-list" aria-label="ملاحظاتي القادمة"></ul></div>
+  </div>
+</section>
+
+<section class="chapter" id="school" data-scene="الفجر يشرق على الجرف">
+  <div class="wrap title-card" data-ghost="١٤٤٨">
+    <h2 class="split">الدراسة ١٤٤٨هـ</h2>
+    <p class="sub">فصلان دراسيان وسبع إجازات. تواريخ بداية العام والإجازات منقولة من التقويم الدراسي المعتمد على موقع وزارة التعليم.</p>
+    <p class="meta"><span>٢٣ أغسطس ٢٠٢٦م – ٢٤ يونيو ٢٠٢٧م</span><span>فصلان دراسيان</span></p>
+  </div>
+  <div class="wrap sec-body">
+    <div class="panel glow">
+      <div class="prog-top">
+        <div><h3 style="margin:0">مسيرة العام الدراسي</h3><p class="note" id="sc-left"></p></div>
+        <b id="sc-pct"></b>
+      </div>
+      <div class="prog" role="progressbar" aria-label="نسبة ما مضى من العام الدراسي" id="sc-bar"><i id="sc-prog"></i></div>
+      <div class="prog-ends"><span>الأحد ٢٣ أغسطس ٢٠٢٦م</span><span>الخميس ٢٤ يونيو ٢٠٢٧م</span></div>
+    </div>
+    <div class="stats" id="sc-stats"></div>
+    <div class="grid2" id="terms"></div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>الحدث</th><th>يبدأ</th><th>العودة للدراسة</th><th>المدة</th><th>الحالة</th></tr></thead>
+        <tbody id="sc-rows"></tbody>
+      </table>
+    </div>
+    <div class="panel note">
+      <p><strong>مكة المكرمة والمدينة المنورة وجدة والطائف:</strong> بدأت الدراسة فيها يوم الأحد ٣٠ أغسطس ٢٠٢٦م، أي بعد بقية المناطق بأسبوع، وينتهي العام فيها يوم الخميس ١ يوليو ٢٠٢٧م، وتبدأ إجازة عيد الأضحى فيها مبكراً لمراعاة موسم الحج. هذه المواعيد تعلنها إدارات التعليم في المناطق، والإجازات المطولة الإضافية (يوم واحد) تختلف من إدارة إلى أخرى، فتأكد من إدارة تعليم منطقتك.</p>
+    </div>
+  </div>
+</section>
+
+<section class="chapter" id="ramadan" data-scene="ليلة الهلال">
+  <div class="wrap title-card" data-ghost="٢٩">
+    <h2 class="split">رمضان ١٤٤٨هـ</h2>
+    <p class="sub">أيام الشهر بتقويم أم القرى، مقابل كل يوم تاريخه الميلادي. البداية الرسمية تُعلن بعد تحرّي رؤية الهلال.</p>
+    <p class="meta" id="ram-meta"></p>
+  </div>
+  <div class="wrap sec-body">
+    <div class="panel feature glow" id="ram-feature"></div>
+    <div class="panel">
+      <h3 id="ram-len"></h3>
+      <div class="rgrid" id="ram-grid"></div>
+      <div class="legend">
+        <span><i style="background:rgba(226,191,122,.25);border-color:rgba(226,191,122,.6)"></i>العشر الأواخر</span>
+        <span><i style="box-shadow:inset 0 -3px 0 var(--c-nat)"></i>إجازة يوم التأسيس للمدارس</span>
+        <span><i style="box-shadow:inset 0 -3px 0 var(--c-school)"></i>إجازة عيد الفطر للمدارس</span>
+        <span><i style="background:var(--gold-hi);border-radius:50%;width:8px;height:8px;border:0"></i>تليه ليلة وترية من العشر الأواخر</span>
+      </div>
+    </div>
+    <div class="cards" id="ram-cards"></div>
+    <div class="sec-head"><h2>إمساكية رمضان ١٤٤٨هـ</h2><p id="imsak-cap"></p></div>
+    <div class="tbl-wrap"><table><thead><tr><th>اليوم</th><th>الإمساك (أذان الفجر)</th><th>الشروق</th><th>الإفطار (المغرب)</th><th>العشاء</th><th>ساعات الصيام</th><th>الليلة القادمة</th></tr></thead><tbody id="imsak-rows"></tbody></table></div>
+  </div>
+</section>
+
+<section class="chapter" id="eid" data-scene="ليلة العيد">
+  <div class="wrap title-card" data-ghost="١٠">
+    <h2 class="split">العيدان والحج</h2>
+    <p class="sub">مواعيد العيدين ومناسك الحج ورأس السنة الهجرية ١٤٤٩هـ، كما يحسبها تقويم أم القرى.</p>
+    <p class="meta"><span>عيد الفطر</span><span>يوم عرفة</span><span>عيد الأضحى</span><span>رأس السنة</span></p>
+  </div>
+  <div class="wrap sec-body">
+    <div class="panel feature glow" id="eid-feature"></div>
+    <div class="panel"><h3>مناسك الحج يوماً بيوم</h3><ol class="rites" id="rites"></ol></div>
+    <div class="cards" id="eid-cards"></div>
+    <div class="panel note"><p><strong>إجازة العيد للموظفين:</strong> تعلن وزارة الموارد البشرية والتنمية الاجتماعية مواعيد إجازة عيدي الفطر والأضحى للقطاعين الحكومي والخاص قبل كل عيد. إجازات الطلاب مذكورة في فصل الدراسة.</p></div>
+  </div>
+</section>
+
+<section class="chapter" id="national" data-scene="أضواء الوطن فوق الجرف">
+  <div class="wrap title-card" data-ghost="٣٠٠">
+    <h2 class="split">المناسبات الوطنية</h2>
+    <p class="sub">يوم التأسيس ٢٠٢٧م يوافق مرور ٣٠٠ عام على تأسيس الدولة السعودية الأولى على يد الإمام محمد بن سعود عام ١٧٢٧م.</p>
+    <p class="meta"><span>يوم التأسيس</span><span>يوم العلم</span><span>اليوم الوطني</span></p>
+  </div>
+  <div class="wrap sec-body">
+    <div class="panel feature glow" id="nat-feature"></div>
+    <div class="cards" id="nat-cards"></div>
+  </div>
+</section>
+
+<section class="chapter" id="kingdom" data-scene="علم بلادي فوق طويق">
+  <div class="wrap title-card" data-ghost="١٩٣٢">
+    <h2 class="split">المملكة</h2>
+    <p class="sub">بلادنا التي نعدّ أيامها: علمها وجنودها، ومناطقها الثلاث عشرة، وقصتها من الدرعية إلى ٢٠٣٤.</p>
+    <p class="meta"><span>علم لا يُنكَّس</span><span>١٣ منطقة</span><span>٨ مواقع في التراث العالمي</span></p>
+  </div>
+  <div class="wrap sec-body">
+    <div class="panel kg-dark"><div class="kg-quote">
+      <div><p class="kg-kick">الجبل الذي يحمل هذا التقويم اسمه</p><blockquote>«همّة السعوديين مثل جبل طويق، ولن تنكسر إلا إذا انهدّ هذا الجبل وتساوى بالأرض»<cite>صاحب السمو الملكي الأمير محمد بن سلمان، ولي العهد، مبادرة مستقبل الاستثمار ٢٠١٨</cite></blockquote></div>
+      <div><div class="kg-flag" id="kg-flag" role="img" aria-label="علم المملكة العربية السعودية"></div>
+      <ul class="kg-facts"><li>لا يُنكَّس العلم السعودي أبداً، ففيه كلمة التوحيد.</li><li>يوم العلم ١١ مارس، ذكرى إقراره عام ١٩٣٧م.</li></ul></div>
+    </div></div>
+
+    <div class="panel kg-dark kg-dua" id="dua">
+      <p class="kg-kick">إلى المرابطين على حدودنا</p>
+      <h3>دعاء لجنودنا</h3>
+      <div class="kg-dua-list">
+        <div><b>لجنودنا</b><p>اللهم احفظ جنودنا المرابطين على الحدود بحفظك، وكن لهم عوناً ونصيراً، وثبّت أقدامهم، واربط على قلوبهم، وسدّد رميهم، وردّهم إلى أهليهم سالمين غانمين.</p></div>
+        <div><b>لشهدائنا وجرحانا</b><p>اللهم ارحم شهداءنا وتقبّلهم عندك، وأكرم نزلهم، واجبر قلوب ذويهم، واخلفهم في أبنائهم بخير. واشفِ جرحانا شفاءً لا يغادر سقماً.</p></div>
+        <div><b>لبلادنا</b><p>اللهم احفظ بلادنا، وأدم عليها نعمة الأمن والإيمان، واحفظ خادم الحرمين الشريفين وولي عهده، ووفّقهم لما فيه خير البلاد والعباد.</p></div>
+      </div>
+      <div class="kg-dua-acts">
+        <button type="button" class="kg-amen" id="amen">آمين<i></i><i></i></button>
+        <button type="button" class="btn ghost" id="dua-copy">انسخ الدعاء</button>
+      </div>
+      <p class="kg-count" id="amen-n" aria-live="polite"></p>
+      <p class="kg-small">دعاء عام بصياغة هذا الموقع، وليس نصاً مأثوراً. عدّاد «آمين» يبقى في جهازك فقط.</p>
+    </div>
+
+    <div class="panel"><h3>تحية إلى حماة الوطن</h3>
+      <ul class="kg-salute"><li>القوات البرية</li><li>القوات الجوية</li><li>القوات البحرية</li><li>قوات الدفاع الجوي</li><li>قوات الصواريخ الاستراتيجية</li><li>الحرس الوطني</li><li>حرس الحدود</li><li>رجال الأمن</li><li>الدفاع المدني</li></ul>
+    </div>
+
+    <div class="panel kg-dark"><h3>خريطة المملكة الحية</h3>
+      <p class="kg-wave" id="kg-wave"></p>
+      <div class="kg-mapwrap">
+        <div><svg id="kg-map" aria-label="خريطة مناطق المملكة الثلاث عشرة"></svg>
+          <div class="kg-legend"><span>ليل<i></i>نهار، بحسب الشمس الآن فوق كل منطقة</span><label class="check" style="color:inherit;min-height:0"><input type="checkbox" id="kg-her-t" name="kg-her-t" checked> مواقع التراث العالمي</label></div></div>
+        <div class="kg-info" id="kg-info" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <div class="panel"><h3>من الدرعية إلى الرؤية</h3>
+      <p id="kg-age" style="font-size:17px;margin:0 0 12px"></p>
+      <ol class="kg-tl">
+        <li><b>١٧٢٧م</b><small>١١٣٩هـ</small><span>الإمام محمد بن سعود يؤسس الدولة السعودية الأولى في الدرعية.</span></li>
+        <li><b>١٨٢٤م</b><small>١٢٤٠هـ</small><span>الإمام تركي بن عبدالله يؤسس الدولة السعودية الثانية.</span></li>
+        <li><b>١٩٠٢م</b><small>١٣١٩هـ</small><span>الملك عبدالعزيز يستعيد الرياض.</span></li>
+        <li><b>١٩٣٢م</b><small>١٣٥١هـ</small><span>توحيد البلاد باسم المملكة العربية السعودية.</span></li>
+        <li><b>١٩٣٨م</b><small>١٣٥٧هـ</small><span>النفط يتدفق من بئر الدمام رقم ٧.</span></li>
+        <li><b>٢٠١٦م</b><small>١٤٣٧هـ</small><span>إطلاق رؤية السعودية ٢٠٣٠.</span></li>
+      </ol>
+      <h3 style="margin-top:22px">ملوك المملكة</h3>
+      <ul class="kg-kings"><li><b>عبدالعزيز</b><span>١٩٣٢–١٩٥٣</span></li><li><b>سعود</b><span>١٩٥٣–١٩٦٤</span></li><li><b>فيصل</b><span>١٩٦٤–١٩٧٥</span></li><li><b>خالد</b><span>١٩٧٥–١٩٨٢</span></li><li><b>فهد</b><span>١٩٨٢–٢٠٠٥</span></li><li><b>عبدالله</b><span>٢٠٠٥–٢٠١٥</span></li><li><b>سلمان</b><span>٢٠١٥–</span></li></ul>
+    </div>
+
+    <div class="panel kg-dark"><h3>المملكة تستضيف العالم</h3>
+      <div class="kg-future" id="kg-future"></div>
+    </div>
+
+    <div class="grid2">
+      <div class="panel"><h3>في قائمة التراث العالمي</h3>
+        <ul class="kg-her" id="kg-her"></ul>
+        <ul class="kg-chips" aria-label="من التراث غير المادي"><li>العرضة النجدية</li><li>المجالس</li><li>القهوة العربية</li><li>الصقارة</li><li>النخلة</li><li>السدو</li><li>القط العسيري</li><li>البن الخولاني</li></ul>
+      </div>
+      <div class="panel"><h3>فناجيل القهوة النجدية</h3>
+        <p style="margin:0 0 6px">اضغط فنجالاً ليُصبّ.</p>
+        <div class="kg-coffee" id="kg-coffee"></div>
+        <p class="kg-cup-note" id="kg-cup-note" aria-live="polite"></p>
+        <p class="kg-small" style="color:#7b6a4e!important">عرف متوارث، وقد تختلف تسميته من بلد إلى بلد.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter" id="salary" data-scene="الساعة الذهبية">
+  <div class="wrap title-card" data-ghost="٢٧">
+    <h2 class="split">الرواتب والدعم</h2>
+    <p class="sub">يوم كل دفعة وتاريخها الهجري والميلادي، من أكتوبر ٢٠٢٦م حتى ديسمبر ٢٠٢٧م.</p>
+    <p class="meta"><span>وزارة المالية</span><span>حساب المواطن</span><span>الضمان الاجتماعي المطوّر</span></p>
+  </div>
+  <div class="wrap sec-body">
+    <div class="panel feature glow" id="pay-feature"></div>
+    <div class="grid2" id="pay-mini"></div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>الشهر</th><th>الراتب الحكومي</th><th>حساب المواطن</th><th>الضمان الاجتماعي المطوّر</th></tr></thead>
+        <tbody id="pay-rows"></tbody>
+      </table>
+    </div>
+    <div class="panel note">
+      <p><strong>قاعدة صرف الرواتب الحكومية:</strong> تُصرف يوم ٢٧ من كل شهر ميلادي. إذا وافق يوم ٢٧ يوم جمعة يُقدَّم الصرف إلى الخميس الذي قبله، وإذا وافق يوم سبت يؤخَّر إلى الأحد الذي بعده، وقد تقدّم وزارة المالية الصرف قبل الأعياد. مواعيد ٢٠٢٦م من جدول وزارة المالية المعلن، ومواعيد ٢٠٢٧م محسوبة بالقاعدة نفسها إلى أن تعلن الوزارة جدول ذلك العام.</p>
+      <p style="margin-top:8px"><strong>حساب المواطن</strong> يُودَع يوم ١٠ من كل شهر ميلادي، وإذا وافق الجمعة يتقدّم إلى الخميس، وإذا وافق السبت يتأخر إلى الأحد. <strong>الضمان الاجتماعي المطوّر</strong> يوم ١ من كل شهر ميلادي، والعلامة <span class="wk-mark">*</span> تعني أنه يوافق إجازة نهاية الأسبوع، وقد يعدّل الموعد بإعلان الوزارة.</p>
+    </div>
+  </div>
+</section>
+
+<section class="chapter" id="majlis" data-scene="مجلس تحت نجوم طويق">
+  <div class="wrap title-card" data-ghost="هلا">
+    <h2 class="split">المجلس</h2>
+    <p class="sub">تفضّل، النار شابّة والدلة على الجمر. هنا كلام الناس الحلو: كلمة لليوم، وأمثال، وقاموس نجدي، وذكريات البلاد.</p>
+    <p class="meta"><span>كلمة كل يوم</span><span>أمثال شعبية</span><span>كلام نجدي</span></p>
+  </div>
+  <div class="wrap sec-body">
+    <div class="panel kg-dark mj-word"><p class="kg-kick">كلمة اليوم</p><p class="w" id="mj-w"></p><button type="button" class="btn ghost" id="mj-next">كلمة ثانية</button></div>
+    <div class="grid2">
+      <div class="panel"><h3>أمثال شعبية</h3><p style="margin:0 0 10px">اضغط المثل ليظهر معناه.</p><div class="flips" id="mj-prov"></div></div>
+      <div class="panel"><h3>قاموس نجدي</h3><p style="margin:0 0 10px">اضغط الكلمة لتعرف معناها.</p><div class="flips" id="mj-dict"></div></div>
+    </div>
+    <div class="grid2">
+      <div class="panel"><h3>هل تعلم؟</h3><p class="dyk" id="mj-dyk" aria-live="polite"></p><button type="button" class="btn ghost" id="mj-dyk-n" style="color:#7a2d17;border-color:#7a2d17">معلومة أخرى</button></div>
+      <div class="panel"><h3>ذكريات البلاد القادمة</h3><ul class="ann" id="mj-ann"></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter" id="prayer" data-scene="وقت المغرب">
+  <div class="wrap title-card" data-ghost="٥">
+    <h2 class="split">أوقات الصلاة</h2>
+    <p class="sub">مواقيت الصلاة لمدن المملكة محسوبة فلكياً بطريقة تقويم أم القرى، مع اتجاه القبلة والمسافة إلى الكعبة المشرفة.</p>
+    <p class="meta"><span>١٦ مدينة</span><span>الفجر ١٨٫٥ درجة</span><span>العشاء بعد المغرب بـ٩٠ دقيقة، و١٢٠ في رمضان</span></p>
+  </div>
+  <div class="wrap sec-body">
+    <div class="city-bar">
+      <label for="city">المدينة</label>
+      <select id="city" name="city" autocomplete="off"></select>
+    </div>
+    <div class="pr-grid">
+      <div class="panel glow">
+        <div class="next-pr" aria-live="polite"><div><p class="note" style="margin:0">الصلاة القادمة</p><b id="pr-next"></b></div><span class="num" id="pr-left"></span></div>
+        <ul class="times" id="pr-today"></ul>
+      </div>
+      <div class="panel glow">
+        <div class="dial" id="pr-dial"></div>
+        <p class="dial-cap" id="pr-dial-cap"></p>
+        <div class="compass">
+          <svg viewBox="0 0 120 120" role="img" aria-label="اتجاه القبلة" id="qibla-svg">
+            <circle cx="60" cy="60" r="54" fill="#0b1915" stroke="rgba(212,175,106,.4)"/>
+            <g id="qibla-ticks"></g>
+            <text x="60" y="16" text-anchor="middle" font-size="10" fill="#d4af6a" font-family="IBM Plex Sans Arabic, sans-serif">ش</text>
+            <text x="108" y="64" text-anchor="middle" font-size="10" fill="#a5aa9b" font-family="IBM Plex Sans Arabic, sans-serif">ق</text>
+            <text x="60" y="112" text-anchor="middle" font-size="10" fill="#a5aa9b" font-family="IBM Plex Sans Arabic, sans-serif">ج</text>
+            <text x="12" y="64" text-anchor="middle" font-size="10" fill="#a5aa9b" font-family="IBM Plex Sans Arabic, sans-serif">غ</text>
+            <g class="needle" id="qibla-needle">
+              <path d="M60 60 L60 18" stroke="#f3dcab" stroke-width="2.4" stroke-linecap="round"/>
+              <rect x="55" y="11" width="10" height="10" rx="1" fill="#16120c" stroke="#d4af6a" stroke-width="1.2"/>
+              <path d="M55 14.5 H65" stroke="#d4af6a" stroke-width="1.4"/>
+              <path d="M60 60 L60 92" stroke="rgba(165,170,155,.5)" stroke-width="1.6" stroke-linecap="round"/>
+            </g>
+            <circle cx="60" cy="60" r="4" fill="#d4af6a"/>
+          </svg>
+          <div><p class="note" style="margin:0">اتجاه القبلة</p><b id="qibla-deg"></b><p id="qibla-txt"></p></div>
+        </div>
+      </div>
+    </div>
+    <div class="grid2"><div class="panel glow" id="night-panel"></div><div class="panel" id="cities-panel"></div></div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>اليوم</th><th>الفجر</th><th>الشروق</th><th>الظهر</th><th>العصر</th><th>المغرب</th><th>العشاء</th></tr></thead>
+        <tbody id="pr-rows"></tbody>
+      </table>
+    </div>
+    <div class="panel note"><p><strong>طريقة الحساب:</strong> الفجر عند انخفاض الشمس ١٨٫٥ درجة تحت الأفق، والعصر حين يصير ظل الشيء مثله، والمغرب عند الغروب، والعشاء بعد المغرب بتسعين دقيقة، ومئة وعشرين دقيقة في رمضان، وهي طريقة تقويم أم القرى. الأوقات محسوبة لمركز كل مدينة، وقد تختلف دقيقة أو دقيقتين عن التقويم الرسمي أو بين أحياء المدينة الواحدة.</p></div>
+    <div class="panel"><h3 id="sun-h">الشمس اليوم</h3>
+      <div class="sun-wrap">
+        <div><svg id="sun-arc" viewBox="0 0 400 170" role="img" aria-label="مسار الشمس اليوم"></svg><dl class="sun-facts" id="sun-f"></dl></div>
+        <div><svg id="qibla-d" viewBox="0 0 200 200" role="img" aria-label="اتجاه القبلة"></svg><p class="qb-t" id="qibla-t"></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter" id="moon" data-scene="القمر الليلة بطوره الحقيقي">
+  <div class="wrap title-card" data-ghost="٠">
+    <h2 class="split">أطوار القمر</h2>
+    <p class="sub">القمر الذي يقوم عليه التقويم الهجري، مرسوماً بطوره الحقيقي لكل يوم، مع مواعيد المحاق والبدر والتربيعين بتوقيت مكة المكرمة.</p>
+    <p class="meta" id="moon-meta"></p>
+  </div>
+  <div class="wrap sec-body">
+    <div class="moon-grid">
+      <div class="moon-stage"><canvas id="moon-cv" aria-hidden="true"></canvas></div>
+      <div class="panel moon-info glow">
+        <h3 id="mi-name"></h3>
+        <p class="h" id="mi-h"></p>
+        <p class="note" id="mi-g" style="margin:2px 0 0"></p>
+        <div class="moon-stats">
+          <div><span>نسبة الإضاءة</span><b id="mi-ill"></b></div>
+          <div><span>عمر القمر</span><b id="mi-age"></b></div>
+          <div><span>البدر القادم</span><b id="mi-full"></b></div>
+        </div>
+        <div class="moon-stats" id="moon-extra"></div>
+        <label class="note" for="moon-range">اسحب لترى القمر في أي يوم من الشهر الهجري</label>
+        <input type="range" id="moon-range" name="moon-day" min="1" max="30" step="1">
+        <div class="range-ends"><span id="mr-a"></span><span id="mr-b"></span></div>
+      </div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>الشهر القمري</th><th>المحاق</th><th>التربيع الأول</th><th>البدر</th><th>التربيع الثاني</th></tr></thead>
+        <tbody id="moon-rows"></tbody>
+      </table>
+    </div>
+    <div class="panel note"><p><strong>عن الحساب:</strong> أوقات الأطوار محسوبة بخوارزميات الفلك الدقيقة (Meeus) ومطابقة لجداول timeanddate بفارق لا يتجاوز دقيقة واحدة. ولادة الهلال فلكياً (المحاق) غير رؤيته؛ بداية الأشهر الهجرية الرسمية يحددها تقويم أم القرى وإعلانات الرؤية.</p></div>
+  </div>
+</section>
+
+<section class="chapter" id="seasons" data-scene="ريح الليل وطلوع سهيل">
+  <div class="wrap title-card" data-ghost="١٢">
+    <h2 class="split">المواسم والنجوم</h2>
+    <p class="sub">السنة كما عرفها أهل الجزيرة العربية بطوالع النجوم: من طلوع سهيل في آخر القيظ إلى الكليبين، اثنا عشر موسماً لكل منها طقسه.</p>
+    <p class="meta" id="season-meta"></p>
+  </div>
+  <div class="wrap sec-body">
+    <div class="season-grid">
+      <div class="wheel" id="wheel"></div>
+      <div class="panel season-now glow" id="season-now"></div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>الموسم</th><th>يبدأ</th><th>ينتهي</th><th>المدة</th><th>الطقس المعتاد</th></tr></thead>
+        <tbody id="season-rows"></tbody>
+      </table>
+    </div>
+    <div class="panel note"><p><strong>تنبيه:</strong> هذه مواسم الحساب الشعبي الموروث، وتواريخها الميلادية ثابتة تقريباً وقد تختلف يوماً واحداً بين المصادر. الطقس الفعلي يعلنه المركز الوطني للأرصاد.</p></div>
+  </div>
+</section>
+
+<section class="chapter" id="fasting" data-scene="ليلة البدر">
+  <div class="wrap title-card" data-ghost="١٥">
+    <h2 class="split">الصيام المستحب</h2>
+    <p class="sub">الأيام البيض حين يكتمل القمر في ١٣ و١٤ و١٥ من كل شهر هجري، ويوم عرفة، وتاسوعاء وعاشوراء، وست من شوال، والاثنين والخميس.</p>
+    <p class="meta"><span>بتقويم أم القرى</span><span>من جمادى الأولى ١٤٤٨هـ إلى ربيع الأول ١٤٤٩هـ</span></p>
+  </div>
+  <div class="wrap sec-body">
+    <div class="panel feature glow" id="fast-feature"></div>
+    <div class="cards" id="fast-cards"></div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>الشهر الهجري</th><th>١٣</th><th>١٤</th><th>١٥</th><th>ملاحظة</th></tr></thead>
+        <tbody id="fast-rows"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="chapter" id="sky" data-scene="كسوف ٢ أغسطس ٢٠٢٧">
+  <div class="wrap title-card" data-ghost="٢٠٢٧">
+    <h2 class="split">ظواهر السماء</h2>
+    <p class="sub">كسوف الشمس الكلي يوم الاثنين ٢ أغسطس ٢٠٢٧م يمر فوق مكة المكرمة وجدة والطائف وجنوب غرب المملكة، وتستمر الكلّية في جدة ٥ دقائق و٥٥ ثانية.</p>
+    <p class="meta"><span>الكسوف والخسوف</span><span>زخات الشهب</span><span>بدايات الفصول</span></p>
+  </div>
+  <div class="wrap sec-body">
+    <div class="panel feature glow" id="sky-feature"></div>
+    <div class="panel ecl" id="ecl">
+      <div class="ecl-stage"><canvas id="ecl-cv" aria-hidden="true"></canvas></div>
+      <div>
+        <h3>محاكاة الكسوف في مكة المكرمة</h3>
+        <span class="t" id="ecl-time"></span>
+        <p class="ph" id="ecl-phase"></p>
+        <p class="cov" id="ecl-cov"></p>
+        <label class="note" for="ecl-range">اسحب لترى مراحل الكسوف من بدايته إلى نهايته</label>
+        <input type="range" id="ecl-range" name="ecl-time" min="0" max="1000" step="1" value="560">
+        <div style="display:flex;gap:10px;margin-top:8px;flex-wrap:wrap"><button class="btn" type="button" id="ecl-play">شغّل الكسوف</button></div>
+        <p class="note" style="margin-top:10px">محاكاة تقريبية مبنية على أوقات التلامس المحسوبة لمكة المكرمة.</p>
+      </div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>المدينة</th><th>نوع الكسوف</th><th>يبدأ</th><th>الكلّية</th><th>الذروة</th><th>ينتهي</th></tr></thead>
+        <tbody>
+          <tr><td class="t">مكة المكرمة</td><td>كلي · ٥ دقائق و١٤ ثانية</td><td class="num">١٢:٠١ م</td><td class="num">١:٢٣:٥٥ – ١:٢٩:٠٩ م</td><td class="num">١:٢٦ م</td><td class="num">٢:٤٤ م</td></tr>
+          <tr><td class="t">جدة</td><td>كلي · ٥ دقائق و٥٥ ثانية</td><td class="num">١٢:٠٠ م</td><td class="num">١:٢٢:١١ – ١:٢٨:٠٦ م</td><td class="num">١:٢٥ م</td><td class="num">٢:٤٣ م</td></tr>
+          <tr><td class="t">الرياض</td><td>جزئي · يغطي القمر ٨٠٪ من قطر الشمس</td><td class="num">١٢:١٣ م</td><td>—</td><td class="num">١:٣٢ م</td><td class="num">٢:٤٥ م</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel note"><p><strong>سلامة العين:</strong> لا تنظر إلى الشمس مباشرة إلا خلال دقائق الكلّية فقط في مسارها. في بقية المراحل استخدم نظارات كسوف مطابقة لمعيار ISO 12312-2؛ النظارات الشمسية العادية لا تحمي العين. أوقات الكسوف من حسابات timeanddate بتوقيت مكة المكرمة.</p></div>
+    <div class="cards" id="sky-cards"></div>
+  </div>
+</section>
+
+<section class="chapter" id="month" data-scene="درب التبانة فوق طويق">
+  <div class="wrap title-card" data-ghost="٣٠">
+    <h2 class="split">التقويم الشهري</h2>
+    <p class="sub">كل يوم بتاريخيه الهجري والميلادي وطور القمر فيه، مع الإجازات والمناسبات وأوقات الصلاة لليوم الذي تختاره.</p>
+    <p class="meta"><span>الأسبوع يبدأ بالأحد</span><span>الجمعة والسبت إجازة نهاية الأسبوع</span></p>
+  </div>
+  <div class="wrap sec-body">
+    <div class="panel">
+      <div class="cal-head">
+        <h3 id="cal-title"></h3>
+        <div class="navs">
+          <button class="navbtn" id="cal-prev" type="button" aria-label="الشهر السابق"><svg aria-hidden="true"><use href="#i-prev"/></svg></button>
+          <button class="navbtn" id="cal-next" type="button" aria-label="الشهر التالي"><svg aria-hidden="true"><use href="#i-next"/></svg></button>
+        </div>
+      </div>
+      <div class="cal" id="cal"></div>
+      <div class="legend">
+        <span><i style="background:rgba(110,198,216,.18);border-color:rgba(110,198,216,.45)"></i>إجازة دراسية</span>
+        <span><i style="background:#0e1f1a"></i>نهاية الأسبوع</span>
+        <span><i style="border-color:var(--gold)"></i>اليوم</span>
+        <span id="cal-dots"></span>
+      </div>
+      <div class="detail" id="cal-detail" aria-live="polite"></div>
+    </div>
+    <div class="panel"><h3>الأشهر القادمة في لمحة</h3><div class="year" id="year"></div></div>
+  </div>
+</section>
+
+<section class="chapter" id="tools" data-scene="قبيل الفجر">
+  <div class="wrap title-card" data-ghost="١٤٤٨">
+    <h2 class="split">المحوّل والحاسبات</h2>
+    <p class="sub">حوّل التاريخ بين الهجري والميلادي، واحسب عمرك بالتقويمين، وعدد الأيام وأيام العمل بين أي تاريخين.</p>
+    <p class="meta"><span>تقويم أم القرى</span><span>أيام العمل من الأحد إلى الخميس</span></p>
+  </div>
+  <div class="wrap sec-body">
+    <div class="grid2 conv">
+      <form class="panel glow" id="f-g2h">
+        <h3>من الميلادي إلى الهجري</h3>
+        <label for="g-in">التاريخ الميلادي</label>
+        <input type="date" id="g-in" name="g-date" autocomplete="off" min="1940-01-01" max="2075-12-31">
+        <div class="out" id="g-out"></div>
+      </form>
+      <form class="panel glow" id="f-h2g">
+        <h3>من الهجري إلى الميلادي</h3>
+        <div class="fields">
+          <div><label for="h-d">اليوم</label><select id="h-d" name="h-day"></select></div>
+          <div style="flex-basis:150px"><label for="h-m">الشهر</label><select id="h-m" name="h-month"></select></div>
+          <div><label for="h-y">السنة</label><select id="h-y" name="h-year"></select></div>
+        </div>
+        <div class="out" id="h-out"></div>
+      </form>
+      <form class="panel calc glow" id="f-age">
+        <h3>حاسبة العمر</h3>
+        <div class="seg" role="group" aria-label="تقويم تاريخ الميلاد"><button type="button" data-cal="g" aria-pressed="true">ميلادي</button><button type="button" data-cal="h" aria-pressed="false">هجري</button></div>
+        <div id="age-g"><label for="age-gin">تاريخ الميلاد</label><input type="date" id="age-gin" name="birth-date" autocomplete="off" min="1920-01-01" max="2026-12-31"></div>
+        <div id="age-h" hidden>
+          <div class="fields">
+            <div><label for="age-hd">اليوم</label><select id="age-hd" name="age-h-day"></select></div>
+            <div style="flex-basis:150px"><label for="age-hm">الشهر</label><select id="age-hm" name="age-h-month"></select></div>
+            <div><label for="age-hy">السنة</label><select id="age-hy" name="age-h-year"></select></div>
+          </div>
+        </div>
+        <div class="out" id="age-out"></div>
+      </form>
+      <form class="panel calc glow" id="f-diff">
+        <h3>الفرق بين تاريخين</h3>
+        <div class="fields">
+          <div><label for="dif-a">من</label><input type="date" id="dif-a" name="from-date" autocomplete="off" min="1940-01-01" max="2075-12-31"></div>
+          <div><label for="dif-b">إلى</label><input type="date" id="dif-b" name="to-date" autocomplete="off" min="1940-01-01" max="2075-12-31"></div>
+        </div>
+        <div class="out" id="dif-out"></div>
+      </form>
+      <form class="panel calc span2 glow" id="f-cd">
+        <h3>عدّاداتك الخاصة</h3>
+        <div class="cd-form">
+          <div><label for="cd-name">اسم المناسبة</label><input type="text" id="cd-name" name="cd-name" maxlength="40" autocomplete="off" placeholder="مثل: سفر العائلة…"></div>
+          <div><label for="cd-date">التاريخ</label><input type="date" id="cd-date" name="cd-date" autocomplete="off"></div>
+          <button class="btn" type="submit">أضف العدّاد</button>
+        </div>
+        <ul class="cd-list" id="cd-list"></ul>
+      </form>
+    </div>
+    <div class="grid2">
+      <div class="panel"><h3>بطاقة تهنئة باسمك</h3>
+        <div class="card-maker">
+          <div>
+            <div class="field"><label for="c-occ">المناسبة</label><select id="c-occ" name="c-occ"></select></div>
+            <div class="field"><label for="c-name">الاسم على البطاقة</label><input id="c-name" name="c-name" maxlength="28" autocomplete="off" placeholder="مثل: عائلة ناصر"></div>
+            <div class="card-acts"><button class="btn" type="button" id="c-save">احفظ الصورة</button><button class="btn ghost" type="button" id="c-copy" style="color:#7a2d17;border-color:#7a2d17">انسخ النص</button></div>
+            <p class="kg-small" style="color:#7b6a4e!important">تُرسم البطاقة في جهازك، ولا يُرسل الاسم إلى أي مكان.</p>
+          </div>
+          <canvas id="c-cv" width="1080" height="1350" role="img" aria-label="معاينة البطاقة"></canvas>
+        </div>
+      </div>
+      <div class="panel"><h3>مسبحة ما بعد الصلاة</h3>
+        <div class="tb-wrap">
+          <select class="tb-mode" id="tb-mode" name="tb-mode" aria-label="نوع الذكر"></select>
+          <button type="button" class="tb" id="tb" aria-label="سبّح"><svg viewBox="0 0 200 200" id="tb-ring" aria-hidden="true"></svg><span class="in"><b id="tb-n"></b><span id="tb-t"></span></span></button>
+          <p class="tb-seal" id="tb-seal" aria-live="polite"></p>
+          <p class="tb-total" id="tb-total"></p>
+          <button type="button" class="btn ghost" id="tb-reset" style="color:#7a2d17;border-color:#7a2d17">ابدأ من جديد</button>
+        </div>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="panel"><h3>حاسبة الزكاة</h3>
+        <label for="zk-in">المال الذي حال عليه الحول (ريال)</label><input type="number" id="zk-in" name="zk-in" min="0" max="999999999999" step="any" inputmode="decimal" placeholder="مثل: 50000">
+        <p id="zk-out" style="font-size:19px;margin:12px 0 4px" aria-live="polite"></p>
+        <p class="kg-small" style="color:#7b6a4e!important" id="zk-hawl"></p>
+        <p class="kg-small" style="color:#7b6a4e!important">ربع العشر فقط. النصاب يتغير بسعر الذهب والفضة، فتأكد منه، واسأل أهل العلم فيما أشكل.</p>
+      </div>
+      <div class="panel"><h3>كم باقي على الإجازة؟</h3><p id="wd-out" style="font-size:19px;line-height:1.7;margin:0"></p></div>
+    </div>
+    <div class="panel"><h3>خذ المواعيد إلى تقويمك</h3>
+      <p>ملف CSV فيه كل المواعيد القادمة، يُستورد مباشرة في تقويم Google (الإعدادات ثم استيراد).</p>
+      <button class="btn" type="button" id="csv-save">احفظ المواعيد</button>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <p class="farewell" id="farewell"></p>
+  <div class="wrap welcome"><svg viewBox="0 0 120 150" aria-hidden="true"><path d="M60 8l4 8h-8zM44 34c2-9 8-14 16-14s14 5 16 14zM40 34h40M46 34c-8 14-14 30-14 50 0 22 6 38 14 46h28c8-8 14-24 14-46 0-20-6-36-14-50M36 130h48M32 142h56l-4-12H36zM34 62C18 58 10 48 8 34c8 2 16 8 26 14M86 58c14-6 26-2 26 12 0 16-10 30-26 34M40 80h40M36 96h48"/></svg><div><p class="wl-t">حيّاك الله</p><p class="wl-s">مكتوب بحبر، ومنسوج بالسدو، ومرسوم على جبل طويق نفسه.</p></div></div>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#top"><svg aria-hidden="true"><use href="#logo-mark"/></svg><span><b>تقويم طويق</b><small translate="no">TUWAIQ CALENDAR</small></span></a>
+      <p class="note">التاريخ الهجري في هذا التقويم محسوب بتقويم أم القرى المعتمد في المملكة. المواعيد الموسومة بـ«متوقع» تعتمد على هذا الحساب، وقد تختلف يوماً واحداً بحسب ما تعلنه المحكمة العليا بعد تحرّي رؤية الهلال. تضاريس الموقع هي جبل طويق الحقيقي قرب حافة العالم، مبنية من بيانات ارتفاع فضائية، مع مبالغة رأسية مقدارها الضعف لتوضيح الجرف وتفاصيل تعرية مولّدة حاسوبياً. مواضع الشمس والقمر والنجوم في مشهد الواجهة حقيقية لوقتك الآن فوق الرياض، وفي بقية الفصول مُختارة لتخدم المشهد. البلدة النجدية والقافلة والنخيل، وسارية العلم وتشكيل الطائرات وعرض الطائرات المسيّرة، مشهد تخيّلي.</p>
+      <div class="foot-stats" id="foot-stats"></div>
+      <button class="btn ghost" type="button" id="share-btn" style="margin-top:14px">انسخ رابط الصفحة</button>
+    </div>
+    <div>
+      <h4>مصادر المشهد ثلاثي الأبعاد</h4>
+      <ul>
+        <li>الارتفاعات: <a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noopener noreferrer">Terrain Tiles</a> (بيانات SRTM وغيرها، عبر Mapzen).</li>
+        <li>أنماط ألوان الأرض مشتقة من <a href="https://s2maps.eu" target="_blank" rel="noopener noreferrer">Sentinel-2 cloudless</a> من EOX IT Services، وفيها بيانات Copernicus Sentinel معدّلة (٢٠١٦).</li>
+        <li>النجوم: كتالوج Yale عبر <a href="https://github.com/ofrohn/d3-celestial" target="_blank" rel="noopener noreferrer">d3-celestial</a>. خريطة القمر: <a href="https://svs.gsfc.nasa.gov/4720" target="_blank" rel="noopener noreferrer">NASA LRO</a>.</li>
+      </ul>
+      <h4>مصادر فصل المملكة</h4>
+      <ul>
+        <li>رسم العلم: <a href="https://commons.wikimedia.org/wiki/File:Flag_of_Saudi_Arabia.svg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> (ملكية عامة). حدود المناطق: <a href="https://www.geoboundaries.org" target="_blank" rel="noopener noreferrer">geoBoundaries</a> (CC BY 4.0)، مبسّطة وللتوضيح فقط.</li>
+        <li>عبارة ولي العهد: <a href="https://saudipedia.com/ar/ما-المقصود-بهمة-طويق؟" target="_blank" rel="noopener noreferrer">الموسوعة السعودية</a>. التراث العالمي: <a href="https://saudipedia.com/en/saudi-sites-on-unesco-world-heritage-list" target="_blank" rel="noopener noreferrer">Saudipedia</a>.</li>
+        <li>كأس آسيا ٢٠٢٧: <a href="https://www.the-afc.com" target="_blank" rel="noopener noreferrer">الاتحاد الآسيوي</a>. إكسبو ٢٠٣٠: <a href="https://www.bie-paris.org" target="_blank" rel="noopener noreferrer">المكتب الدولي للمعارض</a>. كأس العالم ٢٠٣٤: <a href="https://www.fifa.com" target="_blank" rel="noopener noreferrer">FIFA</a>.</li>
+      </ul>
+      <h4>مكتبات الموقع</h4>
+      <ul><li>محمولة داخل الصفحة نفسها: <a href="https://threejs.org" target="_blank" rel="noopener noreferrer">three.js</a> (MIT)، و<a href="https://gsap.com" target="_blank" rel="noopener noreferrer">GSAP</a>، وخطوط كتيبة وأميري ونوتو نسخ وريم كوفي (OFL).</li></ul>
+      <h4>مصادر المواعيد</h4>
+      <ul>
+        <li>التقويم الدراسي ١٤٤٨هـ و١٤٤٩هـ: <a href="https://www.moe.gov.sa/ar/education/generaleducation/Pages/academicCalendar.aspx" target="_blank" rel="noopener noreferrer">موقع وزارة التعليم</a>. تواريخ العودة من الإجازات ونهاية الفصل الأول حسب التقويم الدراسي المنشور.</li>
+        <li>الرواتب الحكومية: جدول وزارة المالية لعام ٢٠٢٦م وقاعدة الصرف المعلنة (<a href="https://www.mof.gov.sa" target="_blank" rel="noopener noreferrer">mof.gov.sa</a>).</li>
+        <li>حساب المواطن (<a href="https://www.ca.gov.sa" target="_blank" rel="noopener noreferrer">ca.gov.sa</a>) والضمان الاجتماعي المطوّر (<a href="https://www.hrsd.gov.sa" target="_blank" rel="noopener noreferrer">hrsd.gov.sa</a>).</li>
+        <li>أوقات الصلاة: حساب فلكي بطريقة أم القرى، مطابق لنتائج <a href="https://aladhan.com" target="_blank" rel="noopener noreferrer">aladhan.com</a> لنفس الطريقة.</li>
+        <li>الكسوف والخسوف وأطوار القمر: <a href="https://www.timeanddate.com/eclipse/" target="_blank" rel="noopener noreferrer">timeanddate.com</a>، وبدايات الفصول الفلكية بتوقيت مكة المكرمة.</li>
+        <li>المواسم الشعبية: الحساب الموروث كما تنشره الصحف السعودية عن المختصين في علم الفلك والتراث.</li>
+        <li>آخر مراجعة للبيانات: الخميس ١٨ جمادى الأولى ١٤٤٨هـ، ٢٩ أكتوبر ٢٠٢٦م.</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</div>
+
+
+
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+
+<script src="main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/world.js"></script>
+<script src="js/lock.js"></script>
