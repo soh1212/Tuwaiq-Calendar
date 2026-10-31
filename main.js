@@ -863,16 +863,14 @@ $("#pal-in").addEventListener("input",askAnswer);
 
 
 /* ---------- welcome: greeting by the hour, the visitor's own name, words for the sky and the cliff ---------- */
-const NAME_OK=/^[\p{L}\p{M} ]{1,20}$/u;
-const nameGet=()=>{const v=store.get("tw-name")||"";return NAME_OK.test(v)?v.trim():""};
+try{localStorage.removeItem("tw-name")}catch(e){}
 const hourR=()=>new Date(Date.now()+3*3600e3).getUTCHours();
 const salam=()=>{const h=hourR();return h<4?"سهرة طيبة":h<11?"صباح الخير":h<15?"طاب يومك":h<18?"مساء الخير":"مساء النور"};
-function renderGreet(){const n=nameGet(),g=$("#greet"),w=(salam()+(n?" يا "+n:"")+"، حيّاك الله في طويق").split(" ");g.textContent="";w.forEach((x,i)=>{const sp=document.createElement("span");sp.textContent=x;sp.style.setProperty("--i",i);g.append(sp,document.createTextNode(" "))});
+function renderGreet(){const g=$("#greet"),w=(salam()+"، حيّاك الله في طويق").split(" ");g.textContent="";w.forEach((x,i)=>{const sp=document.createElement("span");sp.textContent=x;sp.style.setProperty("--i",i);g.append(sp,document.createTextNode(" "))});
  const today=EV.filter(e=>!e.staff&&e.cat!=="pay"&&(e.date.getTime()===T.getTime()||(e.endD&&e.date<=T&&e.endD>=T))).map(e=>e.title)[0];const fri=T.getUTCDay()===5;let last=store.get("tw-last");const gone=last&&okDate(last)?diff(T,iso(last)):0;store.set("tw-last",isoOf(T));
- $("#greet-sub").textContent=today?"اليوم: "+today:fri?"جمعة مباركة":gone>0?`نوّرت من جديد بعد ${dayWord(gone)}`:"البيت بيتك، والقهوة جاهزة";$("#name-btn").textContent=n?"غيّر الاسم":"وش اسمك؟";
- const h=hourR();$("#farewell").textContent=(h>=20||h<4?"تصبح على خير":"في أمان الله")+(n?" يا "+n:"")}
-{const f=$("#name-f"),inp=$("#name-in");$("#name-btn").addEventListener("click",()=>{f.hidden=!f.hidden;if(!f.hidden){inp.value=nameGet();inp.focus()}});f.addEventListener("submit",ev=>{ev.preventDefault();const v=inp.value.trim().replace(/\s+/g," ");if(v&&!NAME_OK.test(v)){toast("اكتب الاسم بالحروف فقط.");return}store.set("tw-name",v);f.hidden=true;renderGreet();if(window.__tw.resetSky)window.__tw.resetSky();toast(v?`حيّاك الله يا ${v}`:"حُذف الاسم")})}
-window.__tw.skyLines=id=>{const n=nameGet();const first=n?"حيّاك الله يا "+n:salam()+"، حيّاكم الله";return {top:[first,"يا هلا ومرحبا بكم","شامخ مثل طويق","دام عزّك يا وطن"],school:["بالتوفيق يا طلابنا"],ramadan:["رمضان كريم"],eid:["عيدكم مبارك"],salary:["بارك الله في رزقكم"],tools:["في أمان الله"]}[id]||null};
+ $("#greet-sub").textContent=today?"اليوم: "+today:fri?"جمعة مباركة":gone>0?`نوّرت من جديد بعد ${dayWord(gone)}`:"البيت بيتك، والقهوة جاهزة";
+ const h=hourR();$("#farewell").textContent=(h>=20||h<4?"تصبح على خير":"في أمان الله")}
+window.__tw.skyLines=id=>{const first=salam()+"، حيّاكم الله";return {top:[first,"يا هلا ومرحبا بكم","شامخ مثل طويق","دام عزّك يا وطن"],school:["بالتوفيق يا طلابنا"],ramadan:["رمضان كريم"],eid:["عيدكم مبارك"],salary:["بارك الله في رزقكم"],tools:["في أمان الله"]}[id]||null};
 window.__tw.cliffLines={top:"طويق شامخ، وهمّتنا أعلى",upcoming:"كل يوم على هذا الجبل وعد جديد",school:"العلم نور",ramadan:"اللهم بلّغنا رمضان",eid:"أعاده الله علينا باليمن والبركات",national:"دام عزّك يا وطن",kingdom:"حمى الله جنودنا",salary:"الرزق على الله",majlis:"حيّاكم الله في مجلسنا",prayer:"حيّ على الفلاح",moon:"ما أجمل ليلك يا طويق",seasons:"إذا طلع سهيل برد الليل",fasting:"صيامكم مقبول",sky:"سبحان الله",month:"سبحان من زيّن السماء",tools:"في أمان الله"};
 {const K={upcoming:"الأيام تمشي، وخيرها ما نستعد له.",school:"كل صفحة تفتحها اليوم باب يفتح لك بكرة.",ramadan:"شهر تهدأ فيه القلوب قبل أن تضيء الفوانيس.",eid:"فرحة تجمع الأهل، وقهوة تجمع القلوب.",national:"وطن نعدّ أيامه، لأن كل يوم فيه نعمة.",kingdom:"في كل حجر من هذا الجبل حكاية رجال.",salary:"رزقك مكتوب، وموعده هنا.",majlis:"المجلس مفتوح، وأنت صاحب بيت.",prayer:"خمس وقفات في اليوم تعيد لك نفسك.",moon:"القمر تقويم معلّق في السماء.",seasons:"عرف الأولون مواسمهم من نجوم هذا الليل.",fasting:"يوم تصومه يقرّبك خطوة.",sky:"سماء واحدة، ودهشة لا تنتهي.",month:"كل خانة في التقويم يوم يستاهل يُعاش.",tools:"احسبها صح، والباقي على الله."};Object.keys(K).forEach(id=>{const sec=document.getElementById(id),tc=sec&&sec.querySelector(".title-card .sub");if(tc){const p=document.createElement("p");p.className="kalima";p.textContent=K[id];tc.after(p)}})}
 
@@ -976,20 +974,20 @@ addEventListener("scroll",onScroll,{passive:true});
 /* ---------- GSAP choreography ---------- */
 function setupMotion(){
   if(!window.gsap||!window.ScrollTrigger)return;
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);ScrollTrigger.config({ignoreMobileResize:true});
   const mm=gsap.matchMedia();
   mm.add({full:"(prefers-reduced-motion: no-preference)",wide:"(min-width: 901px)"},ctx=>{
-    const {full,wide}=ctx.conditions;
+    const {full,wide}=ctx.conditions;const touch=matchMedia("(pointer:coarse)").matches;
     if(!full||motionOff)return;
     /* titles are written right to left, then the pen underlines them */
     document.querySelectorAll(".title-card").forEach(tc=>{const h=tc.querySelector("h2");
       const v=["M598 12C470 3 392 22 298 13S104 7 2 17","M598 16C520 21 430 5 310 12S120 22 4 9","M597 9C486 17 402 4 296 15S98 12 3 20"];const P=document.createElementNS("http://www.w3.org/2000/svg","svg");P.setAttribute("viewBox","0 0 600 26");P.setAttribute("preserveAspectRatio","none");P.setAttribute("class","pen");P.setAttribute("aria-hidden","true");const pa=document.createElementNS("http://www.w3.org/2000/svg","path");pa.setAttribute("d",v[Math.floor(Math.random()*3)]);pa.setAttribute("pathLength","1");P.appendChild(pa);h.after(P);
       const rest=tc.querySelectorAll(".sub,.meta,.scene");
-      const tl=gsap.timeline({scrollTrigger:{trigger:tc,start:"bottom 92%",toggleActions:"play none none reverse"}});
+      const tl=gsap.timeline({scrollTrigger:{trigger:tc,start:"bottom 92%",toggleActions:touch?"play none none none":"play none none reverse"}});
       tl.fromTo(h,{clipPath:"inset(-30% -4% -30% 100%)"},{clipPath:"inset(-30% -4% -30% -4%)",duration:1.25,ease:"power2.inOut"}).fromTo(pa,{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:.8,ease:"power2.out"},"-=.45").fromTo(rest,{opacity:0,y:12},{opacity:1,y:0,duration:.7,stagger:.08,ease:"power2.out"},"-=.5");
     });
     /* panels settle in from an already visible state */
-    ScrollTrigger.batch(".sec-body > *:not(.strip-wrap)",{start:"top 92%",onEnter:els=>gsap.fromTo(els,{y:46,scale:.985},{y:0,scale:1,duration:1,ease:"expo.out",stagger:.07,overwrite:true})});
+    ScrollTrigger.batch(".sec-body > *:not(.strip-wrap)",{start:"top 92%",once:true,onEnter:els=>gsap.fromTo(els,touch?{y:46}:{y:46,scale:.985},Object.assign({y:0,duration:touch?.6:1,ease:"expo.out",stagger:.07,overwrite:true,clearProps:"transform"},touch?{}:{scale:1}))});
     /* hero drifts up and dims as the journey begins */
     gsap.to(".hero-text",{yPercent:-22,opacity:.25,ease:"none",scrollTrigger:{trigger:".hero",start:"top top",end:"bottom top",scrub:true}});
     /* school progress bar grows from zero to the real share of the year */
