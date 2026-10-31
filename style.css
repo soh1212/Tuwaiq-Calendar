@@ -142,6 +142,7 @@ html.nopost .grain{display:block}
 
 /* chapters */
 .chapter{position:relative;padding-bottom:clamp(56px,8vw,110px)}
+@media (pointer:coarse){html{scroll-behavior:auto;overflow-anchor:none;overscroll-behavior-y:none}body{overflow-anchor:none;overscroll-behavior-y:none}}
 .title-card{min-height:62vh;display:flex;flex-direction:column;justify-content:flex-end;padding-block:120px 40px;position:relative;overflow:clip}
 .title-card[data-ghost]::after{content:attr(data-ghost);content:attr(data-ghost) / "";position:absolute;inset-inline-end:max(16px,env(safe-area-inset-left,0px));bottom:6px;font-family:var(--f-display);font-weight:700;font-size:clamp(120px,24vw,360px);line-height:.8;color:transparent;-webkit-text-stroke:1px rgba(var(--acc),.2);pointer-events:none;z-index:-1;white-space:nowrap}
 .title-card::before{content:"";position:absolute;inset:auto auto 0 0;width:min(760px,100%);height:100%;inset-inline-start:0;background:radial-gradient(70% 60% at 100% 85%,rgba(3,7,6,.55),transparent 70%);z-index:-1;pointer-events:none}
