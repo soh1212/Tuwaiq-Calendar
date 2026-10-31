@@ -963,7 +963,7 @@ const topbar=$("#topbar"),bar=$("#progress");
 let lastY=scrollY,lastST=performance.now();
 function onScroll(){const y=window.scrollY,max=document.documentElement.scrollHeight-innerHeight;bar.style.transform=`scaleX(${max>0?(y/max).toFixed(4):0})`;topbar.classList.toggle("solid",y>40);
   const nowT=performance.now(),dy=y-lastY;window.__tw.scrollVel=dy/Math.max(16,nowT-lastST)*1000;lastST=nowT;
-  if(!matchMedia("(pointer:coarse)").matches&&y>innerHeight*.7&&dy>6&&!palOpen)topbar.classList.add("hide");else if(dy<-6||y<innerHeight*.7)topbar.classList.remove("hide");lastY=y;
+  if(y>innerHeight*.7&&dy>6&&!palOpen)topbar.classList.add("hide");else if(dy<-6||y<innerHeight*.7)topbar.classList.remove("hide");lastY=y;
   $("#totop").classList.toggle("on",y>innerHeight*1.4);
   const mid=y+innerHeight*.45;let id=CHAPTERS[0].id;for(const L of window.__tw.layout){if(L.top<=mid)id=L.id}setActive(id)}
 addEventListener("scroll",onScroll,{passive:true});
